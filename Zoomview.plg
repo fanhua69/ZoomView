@@ -1,0 +1,160 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: zoomview - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\wrh\LOCALS~1\Temp\RSP19.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "_COMPILING_FHZOOMVIEW" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /FR"Debug/" /Fp"Debug/zoomview.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\projects\zoomview\source\CMPBaseView.cpp"
+"D:\projects\zoomview\source\SeisDataBaseView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\wrh\LOCALS~1\Temp\RSP19.tmp" 
+Creating temporary file "C:\DOCUME~1\wrh\LOCALS~1\Temp\RSP1A.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/zoomviewd.pdb" /debug /machine:I386 /def:".\zoomview.def" /out:"lib/zoomviewd.dll" /implib:"lib/zoomviewd.lib" /pdbtype:sept 
+.\Debug\BmpProc.obj
+.\Debug\CMPBaseDoc.obj
+.\Debug\CMPBaseView.obj
+.\Debug\CMPFile.obj
+.\Debug\CMPIndexDoc.obj
+.\Debug\CMPIndexFile.obj
+.\Debug\ColorScale.obj
+.\Debug\ctrlext.obj
+.\Debug\DlgAskOneValue.obj
+.\Debug\DlgEditViewSize.obj
+.\Debug\DlgMonitor.obj
+.\Debug\DlgPassword.obj
+.\Debug\DlgSeisDataProperty.obj
+.\Debug\DlgTreeProperty.obj
+.\Debug\DrawGroup.obj
+.\Debug\FHCGlobal.obj
+.\Debug\FHEditDoc.obj
+.\Debug\fheditview.obj
+.\Debug\FHGlobal.obj
+.\Debug\FHPointLocDoc.obj
+.\Debug\FHPointLocView.obj
+.\Debug\FHString.obj
+.\Debug\FHTreeView.obj
+.\Debug\FHTreeView2.obj
+.\Debug\FHZoomApprDlg.obj
+.\Debug\fhzoomview.obj
+.\Debug\fhzoomview1.obj
+.\Debug\FHZoomViewGlobal.obj
+.\Debug\FontGroup.obj
+.\Debug\four1.obj
+.\Debug\GridCtrl.obj
+.\Debug\GridDropTarget.obj
+.\Debug\Hyperbola.obj
+.\Debug\InfoDlg.obj
+.\Debug\InfoView.obj
+.\Debug\InfoViewPar.obj
+.\Debug\InPlaceEdit.obj
+.\Debug\InPlaceList.obj
+.\Debug\Line.obj
+.\Debug\Memequa.obj
+.\Debug\MyObArray.obj
+.\Debug\MyObList.obj
+.\Debug\MyRect.obj
+.\Debug\PopupMenuManager.obj
+.\Debug\ProgDlg.obj
+.\Debug\Range.obj
+.\Debug\realft.obj
+.\Debug\reverse.obj
+.\Debug\SegyMultiGroup.obj
+.\Debug\SeisDataBaseDoc.obj
+.\Debug\SeisDataBaseView.obj
+.\Debug\Spline.obj
+.\Debug\splitterTabWnd.obj
+.\Debug\StdAfx.obj
+.\Debug\XYZDoc.obj
+.\Debug\XYZView.obj
+.\Debug\ZDEquation.obj
+.\Debug\zoomview.obj
+.\Debug\zoomview.res
+]
+Creating command line "link.exe @C:\DOCUME~1\wrh\LOCALS~1\Temp\RSP1A.tmp"
+<h3>Output Window</h3>
+Compiling...
+SeisDataBaseView.cpp
+d:\projects\zoomview\include\segy.h(638) : warning C4305: '*=' : truncation from 'const double' to 'float'
+Generating Code...
+Skipping... (no relevant changes detected)
+CMPBaseView.cpp
+Linking...
+   Creating library lib/zoomviewd.lib and object lib/zoomviewd.exp
+Creating temporary file "C:\DOCUME~1\wrh\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+/nologo /o"Debug/zoomview.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\BmpProc.sbr
+.\Debug\CMPBaseDoc.sbr
+.\Debug\CMPBaseView.sbr
+.\Debug\CMPFile.sbr
+.\Debug\CMPIndexDoc.sbr
+.\Debug\CMPIndexFile.sbr
+.\Debug\ColorScale.sbr
+.\Debug\ctrlext.sbr
+.\Debug\DlgAskOneValue.sbr
+.\Debug\DlgEditViewSize.sbr
+.\Debug\DlgMonitor.sbr
+.\Debug\DlgPassword.sbr
+.\Debug\DlgSeisDataProperty.sbr
+.\Debug\DlgTreeProperty.sbr
+.\Debug\DrawGroup.sbr
+.\Debug\FHCGlobal.sbr
+.\Debug\FHEditDoc.sbr
+.\Debug\fheditview.sbr
+.\Debug\FHGlobal.sbr
+.\Debug\FHPointLocDoc.sbr
+.\Debug\FHPointLocView.sbr
+.\Debug\FHString.sbr
+.\Debug\FHTreeView.sbr
+.\Debug\FHTreeView2.sbr
+.\Debug\FHZoomApprDlg.sbr
+.\Debug\fhzoomview.sbr
+.\Debug\fhzoomview1.sbr
+.\Debug\FHZoomViewGlobal.sbr
+.\Debug\FontGroup.sbr
+.\Debug\four1.sbr
+.\Debug\GridCtrl.sbr
+.\Debug\GridDropTarget.sbr
+.\Debug\Hyperbola.sbr
+.\Debug\InfoDlg.sbr
+.\Debug\InfoView.sbr
+.\Debug\InfoViewPar.sbr
+.\Debug\InPlaceEdit.sbr
+.\Debug\InPlaceList.sbr
+.\Debug\Line.sbr
+.\Debug\Memequa.sbr
+.\Debug\MyObArray.sbr
+.\Debug\MyObList.sbr
+.\Debug\MyRect.sbr
+.\Debug\PopupMenuManager.sbr
+.\Debug\ProgDlg.sbr
+.\Debug\Range.sbr
+.\Debug\realft.sbr
+.\Debug\reverse.sbr
+.\Debug\SegyMultiGroup.sbr
+.\Debug\SeisDataBaseDoc.sbr
+.\Debug\SeisDataBaseView.sbr
+.\Debug\Spline.sbr
+.\Debug\splitterTabWnd.sbr
+.\Debug\XYZDoc.sbr
+.\Debug\XYZView.sbr
+.\Debug\ZDEquation.sbr
+.\Debug\zoomview.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\wrh\LOCALS~1\Temp\RSP1E.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+zoomviewd.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

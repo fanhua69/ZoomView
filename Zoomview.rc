@@ -1,0 +1,995 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""..\\res\\zoomview.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "zoomview DLL"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "zoomview"
+            VALUE "LegalCopyright", "版权所有 (C) 2000"
+            VALUE "ProductName", "zoomview Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CursorZoomIn        CURSOR                  ".\\Res\\CurZoomIn.cur"
+IDC_CursorZoomOut       CURSOR                  ".\\Res\\CurZoomOut.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FHEditViewSetSize DIALOGEX 0, 0, 163, 129
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "表格行列数目"
+FONT 10, "宋体", 400, 0, 0x86
+BEGIN
+    RTEXT           "表格行数：",IDC_STATIC,37,41,49,10
+    RTEXT           "表格列数：",IDC_STATIC,42,57,44,10
+    EDITTEXT        IDC_RowNumber,89,38,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ColNumber,89,54,38,12,ES_AUTOHSCROLL
+END
+
+IDD_FHZoomAppearance DIALOGEX 0, 0, 235, 244
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自由放大视"
+FONT 10, "宋体", 400, 0, 0x86
+BEGIN
+    RTEXT           "字体:",IDC_STATIC,66,25,20,10
+    PUSHBUTTON      "...",IDC_ButtonTitleFont,90,23,21,12,0,WS_EX_STATICEDGE
+    RTEXT           "标题内容:",IDC_STATIC,112,25,38,8
+    EDITTEXT        IDC_EditTitle,155,23,59,12,ES_AUTOHSCROLL
+    CONTROL         "绘制标题",IDC_CheckDrawTitle,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,26,45,9
+    CTEXT           "字体",IDC_STATIC,62,68,19,11
+    PUSHBUTTON      "...",IDC_ButtonMapCharFont,61,80,19,12,0,
+                    WS_EX_STATICEDGE
+    CTEXT           "颜色",IDC_STATIC,83,68,20,11
+    PUSHBUTTON      "...",IDC_ButtonDrawLineColor,105,80,19,12,0,
+                    WS_EX_STATICEDGE
+    CTEXT           "大小",IDC_STATIC,131,68,29,11
+    EDITTEXT        IDC_editContentSize,126,79,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_spinContentSize,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,157,79,10,12,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_ButtonMapCharCurrFont,61,94,19,12,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_ButtonDrawCurrentLineColor,105,94,19,12,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_editContentCurrSize,126,95,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_spinContentCurrSize,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,157,95,
+                    10,12,WS_EX_STATICEDGE
+    CONTROL         "绘制坐标",IDC_CheckDrawCoor,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,144,45,9
+    CONTROL         "使用下面用户定义的坐标",IDC_CheckUseUserDefineCoor,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,144,96,9
+    RTEXT           "坐标字体:",IDC_STATIC,155,144,40,10
+    PUSHBUTTON      "...",IDC_ButtonCoorFont,196,142,21,12,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_ButtonCoorThickColorHor,77,172,21,12,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_nThickLineStartHor,99,172,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nThickLineEndHor,138,172,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nThickLineStepHor,177,172,37,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ButtonCoorThinColorHor,77,185,21,12,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_nThinLineStartHor,99,185,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nThinLineEndHor,138,185,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nThinLineStepHor,177,185,37,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ButtonCoorThickColorVer,77,198,21,12,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_nThickLineStartVer,99,198,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nThickLineEndVer,138,198,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nThickLineStepVer,177,198,37,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ButtonCoorThinColorVer,77,212,21,12,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_nThinLineStartVer,99,212,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nThinLineEndVer,138,212,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nThinLineStepVer,177,212,37,12,ES_AUTOHSCROLL
+    GROUPBOX        "坐标属性",IDC_STATIC,6,126,219,111
+    RTEXT           "横坐标粗线:",IDC_STATIC,10,173,48,10
+    GROUPBOX        "标题",IDC_STATIC,6,8,219,38
+    RTEXT           "横坐标细线:",IDC_STATIC,10,186,48,10
+    LTEXT           "颜色",IDC_STATIC,61,161,22,8
+    CONTROL         "",IDC_FrameThickLineColorHor,"Static",SS_BLACKFRAME,62,
+                    172,13,11
+    CONTROL         "",IDC_FrameThinLineColorHor,"Static",SS_BLACKFRAME,62,
+                    185,13,11
+    LTEXT           "开始值",IDC_STATIC,106,161,22,8
+    LTEXT           "结束值",IDC_STATIC,145,161,22,8
+    LTEXT           "步长",IDC_STATIC,185,161,22,8
+    RTEXT           "纵坐标粗线:",IDC_STATIC,10,199,48,10
+    RTEXT           "纵坐标细线:",IDC_STATIC,10,212,48,10
+    CONTROL         "",IDC_FrameThickLineColorVer,"Static",SS_BLACKFRAME,62,
+                    198,13,11
+    CONTROL         "",IDC_FrameThinLineColorVer,"Static",SS_BLACKFRAME,62,
+                    212,13,11
+    GROUPBOX        "图中内容",IDC_STATIC,6,54,219,65
+    CONTROL         "",IDC_staticContentColor,"Static",SS_BLACKFRAME,83,80,
+                    19,12
+    CONTROL         "",IDC_staticContentCurrColor,"Static",SS_BLACKFRAME,83,
+                    94,19,12
+    RTEXT           "普通内容:",IDC_STATIC,13,82,42,8
+    RTEXT           "当前内容:",IDC_STATIC,14,96,41,8
+    CTEXT           "图案",IDC_STATIC,168,68,40,11
+    COMBOBOX        IDC_comboCommonPattern,171,79,44,75,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_comboCurrentPattern,171,95,44,73,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_InfoDlg DIALOGEX 0, 0, 57, 45
+STYLE DS_SETFONT | WS_POPUP
+FONT 10, "宋体", 400, 0, 0x86
+BEGIN
+END
+
+IDD_DlgColorModal DIALOG  0, 0, 56, 238
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "色标"
+FONT 6, "Arial Narrow"
+BEGIN
+END
+
+IDD_AskOneValue DIALOGEX 0, 0, 191, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "询问"
+FONT 10, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_sValue,89,33,71,18,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,40,73,51,16
+    PUSHBUTTON      "取消",IDCANCEL,100,73,50,16
+    RTEXT           "工区:",IDC_sAsk,14,38,73,13
+END
+
+IDD_DlgTreeProperty DIALOGEX 0, 0, 159, 129
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据库属性"
+FONT 10, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,22,100,50,14
+    PUSHBUTTON      "取消",IDCANCEL,88,100,50,14
+    RTEXT           "工区数目:",IDC_STATIC,9,25,79,9
+    RTEXT           "当前工区内测线数目:",IDC_STATIC,9,57,79,9
+    EDITTEXT        IDC_nAreaNumber,91,23,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nLineNumber,91,55,47,12,ES_AUTOHSCROLL
+    RTEXT           "总共测线数目:",IDC_STATIC,9,73,79,9
+    EDITTEXT        IDC_nTotalLineNumber,91,71,47,12,ES_AUTOHSCROLL
+    RTEXT           "当前工区名称:",IDC_STATIC,9,41,79,9
+    EDITTEXT        IDC_sAreaCurrent,91,39,47,12,ES_AUTOHSCROLL
+END
+
+IDD_DlgPassword DIALOGEX 0, 0, 191, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "口令"
+FONT 10, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_sUserName,94,46,51,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_sAnswer,94,66,51,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,43,111,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,110,50,14
+    RTEXT           "口令：",IDC_STATIC,49,70,38,11
+    RTEXT           "用户名：",IDC_STATIC,49,49,38,11
+    CTEXT           "提示信息",IDC_sTip,7,23,177,8
+END
+
+IDD_ProgressMonitor DIALOGEX 0, 0, 183, 233
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "进行中"
+FONT 10, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "取消",IDCANCEL,67,212,50,14
+    CONTROL         "Progress1",IDC_MPROGRESS,"msctls_progress32",0x1,15,34,
+                    154,13,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           " 0 %",IDC_MPERCENT,85,23,18,8
+    CTEXT           "状态信息",IDC_MoStatus,18,8,143,8
+    EDITTEXT        IDC_Monitor,23,89,139,113,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    RTEXT           "起始监视点",IDC_STATIC,27,56,81,9
+    RTEXT           "终止监视点",IDC_STATIC,27,70,80,9
+    EDITTEXT        IDC_nStart,113,54,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nEnd,113,69,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DlgXYZInfo DIALOG  0, 0, 240, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "XYZ文件信息"
+FONT 9, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "好",IDOK,54,124,50,14
+    PUSHBUTTON      "取消",IDCANCEL,134,124,50,14
+    RTEXT           "输出文件名称",IDC_STATIC,30,106,44,11
+    CTEXT           "平均值",IDC_STATIC,169,18,60,8
+    RTEXT           "南北坐标",IDC_STATIC,9,32,32,11
+    RTEXT           "东西坐标",IDC_STATIC,11,48,30,11
+    RTEXT           "数值的数目",IDC_STATIC,30,90,44,11
+    RTEXT           "数值",IDC_STATIC,14,64,22,11
+    CTEXT           "最小值",IDC_STATIC,47,18,60,8
+    CTEXT           "最大值",IDC_STATIC,108,18,60,8
+    EDITTEXT        IDC_dMinNorth,47,30,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_dMinEast,47,46,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_dMinValue,47,62,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_dMaxNorth,108,30,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_dMaxEast,108,46,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_dMaxValue,108,62,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_dAverNorth,169,30,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_dAverEast,169,46,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_dAverValue,169,62,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nQuantity,84,88,117,12,ES_AUTOHSCROLL
+    GROUPBOX        "数据范围",IDC_STATIC,7,7,226,75
+    EDITTEXT        IDC_sOutFile,84,104,117,12,ES_AUTOHSCROLL
+END
+
+IDD_DlgAskPage DIALOGEX 0, 0, 189, 146
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找页数"
+FONT 10, "宋体", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,30,109,50,14
+    PUSHBUTTON      "取消",IDCANCEL,111,109,50,14
+    RTEXT           "选取页数：",IDC_STATIC,24,36,66,10
+    EDITTEXT        IDC_nPageSelected,99,32,54,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SliderCurrentPage,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,22,74,146,15
+    RTEXT           "总页数：",IDC_STATIC,24,53,66,10
+    EDITTEXT        IDC_nPageQty,99,49,54,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_DlgSprTextImporter DIALOGEX 0, 0, 277, 270
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "文本导入器(分隔符)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,61,249,50,14
+    PUSHBUTTON      "取消",IDCANCEL,164,249,50,14
+    PUSHBUTTON      "...",IDC_buttonOpenFile,152,22,18,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_editCurrentFile,61,22,88,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_listSprText,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,93,263,152
+    COMBOBOX        IDC_comboItemName,61,37,109,108,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Tab键",IDC_checkTab,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,23,34,10
+    CONTROL         "逗号",IDC_checkComma,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,38,34,10
+    CONTROL         "分号",IDC_checkSemiColon,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,231,23,34,10
+    CONTROL         "空格",IDC_checkBlank,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,231,38,34,10
+    CONTROL         "其他:",IDC_checkOther,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,68,34,10
+    EDITTEXT        IDC_Seperator,231,68,28,12,ES_AUTOHSCROLL
+    RTEXT           "项目名称:",IDC_STATIC,18,38,38,11
+    RTEXT           "当前文件:",IDC_STATIC,18,23,38,11
+    RTEXT           "起始行:",IDC_STATIC,18,54,38,12
+    EDITTEXT        IDC_editStartLine,61,52,109,12,ES_AUTOHSCROLL
+    RTEXT           "终止行:",IDC_STATIC,19,69,37,12
+    EDITTEXT        IDC_editEndLine,61,67,109,12,ES_AUTOHSCROLL
+    GROUPBOX        "分隔符",IDC_STATIC,183,7,87,82
+    GROUPBOX        "输入文件属性",IDC_STATIC,7,7,171,82
+    CONTROL         "冒号",IDC_checkColon,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,53,34,10
+    CONTROL         "竖线",IDC_checkVerticalLine,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,231,54,34,10
+END
+
+IDD_DlgSeisWorkProperty DIALOGEX 0, 0, 226, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "施工参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_Project,65,22,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Area,65,38,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Client,65,54,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Contractor,65,71,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LineName,163,22,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Crew,163,38,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ProjectYear,163,54,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WorkYear,74,110,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WorkMonth,124,110,18,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WorkDay,159,110,18,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TestYear,74,126,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TestMonth,124,126,18,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TestDay,159,126,18,14,ES_AUTOHSCROLL
+    LTEXT           "项目名称:",IDC_STATIC,25,25,36,8
+    RTEXT           "工区:",IDC_STATIC,23,41,36,8
+    RTEXT           "客户:",IDC_STATIC,24,57,34,8
+    RTEXT           "承包方:",IDC_STATIC,31,74,28,8
+    LTEXT           "施工时间:",IDC_STATIC,32,112,36,8
+    LTEXT           "测线名称:",IDC_STATIC,123,25,36,8
+    LTEXT           "地震队号:",IDC_STATIC,123,41,36,8
+    LTEXT           "测试时间:",IDC_STATIC,32,128,36,8
+    LTEXT           "项目年度:",IDC_STATIC,123,57,36,8
+    GROUPBOX        "时间参数",IDC_STATIC,7,96,212,69
+    GROUPBOX        "施工参数",IDC_STATIC,7,6,212,86
+    EDITTEXT        IDC_TestHour,74,142,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TestMinute,124,142,18,14,ES_AUTOHSCROLL
+    LTEXT           "年",IDC_STATIC,112,113,9,8
+    LTEXT           "月",IDC_STATIC,147,113,9,8
+    LTEXT           "日",IDC_STATIC,182,113,9,8
+    LTEXT           "年",IDC_STATIC,112,129,9,8
+    LTEXT           "月",IDC_STATIC,147,129,9,8
+    LTEXT           "日",IDC_STATIC,182,129,9,8
+    LTEXT           "时",IDC_STATIC,112,145,9,8
+    LTEXT           "分",IDC_STATIC,147,145,9,8
+    EDITTEXT        IDC_TestSecond,159,142,18,14,ES_AUTOHSCROLL
+    LTEXT           "秒",IDC_STATIC,182,145,9,8
+END
+
+IDD_DlgNewDataBase DIALOGEX 0, 0, 199, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "新建数据库"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,43,94,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,94,50,14
+    RTEXT           "路径:",IDC_STATIC,24,24,45,8
+    RTEXT           "工区1:",IDC_STATIC,24,39,45,8
+    RTEXT           "工区2:",IDC_STATIC,24,54,45,8
+    RTEXT           "工区3:",IDC_STATIC,24,69,45,8
+    EDITTEXT        IDC_EditPath,77,23,68,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EditArea1,77,38,68,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EditArea2,77,52,68,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EditArea3,77,67,68,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ButtonPath,147,23,22,13,0,WS_EX_CLIENTEDGE
+END
+
+IDD_ChartProperty DIALOGEX 0, 0, 238, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "图表属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "二维",IDC_radioDimemsion,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,34,31,32,10
+    CONTROL         "三维",IDC_radioDimension2,"Button",BS_AUTORADIOBUTTON,
+                    74,31,32,10
+    DEFPUSHBUTTON   "确定",IDOK,55,136,50,14
+    PUSHBUTTON      "取消",IDCANCEL,135,137,50,14
+    GROUPBOX        "图表类型",IDC_STATIC,19,15,101,107
+    GROUPBOX        "图表属性",IDC_STATIC,125,15,97,60
+    CONTROL         "显示图例",IDC_checkShowLegend,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,31,47,13
+    CONTROL         "显示边界",IDC_checkShowBorder,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,50,54,13
+    EDITTEXT        IDC_EditTitleString,159,86,57,13,ES_AUTOHSCROLL
+    RTEXT           "表头:",IDC_STATIC,128,88,25,12
+    EDITTEXT        IDC_EditFootString,159,101,57,13,ES_AUTOHSCROLL
+    RTEXT           "表脚:",IDC_STATIC,128,104,25,12
+    LISTBOX         IDC_listChartType,30,49,79,64,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DlgPasswordAdder DIALOGEX 0, 0, 179, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "口令"
+FONT 10, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_sUserName,74,37,74,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_sAnswer,74,53,74,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,32,129,50,14
+    PUSHBUTTON      "取消",IDCANCEL,95,129,50,14
+    RTEXT           "口令:",IDC_STATIC,19,55,48,11
+    RTEXT           "用户名:",IDC_STATIC,19,39,48,11
+    RTEXT           "级别:",IDC_STATIC,19,71,48,11
+    COMBOBOX        IDC_comboUserLevel,74,69,74,33,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "提示信息",IDC_sTip,29,23,129,8
+    EDITTEXT        IDC_sDateStart,74,84,74,13,ES_AUTOHSCROLL
+    RTEXT           "起始年月日:",IDC_STATIC,19,87,48,11
+    EDITTEXT        IDC_sDateEnd,74,100,74,13,ES_AUTOHSCROLL
+    RTEXT           "终止年月日:",IDC_STATIC,19,103,48,11
+END
+
+IDD_DlgMultiRgnViewProperty DIALOGEX 0, 0, 262, 220
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "数据显示属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "作为一个系列",IDC_radioRefPointType,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,18,22,64,10
+    CONTROL         "作为第一个点",IDC_radioRefPointType2,"Button",
+                    BS_AUTORADIOBUTTON,18,37,64,10
+    CONTROL         "不显示",IDC_radioRefPointType3,"Button",
+                    BS_AUTORADIOBUTTON,18,52,40,10
+    CONTROL         "炮序号",IDC_RadioSortByShotOrder,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,130,28,40,10
+    CONTROL         "炮点号",IDC_RadioSortByShotPoint,"Button",
+                    BS_AUTORADIOBUTTON,130,43,40,10
+    CONTROL         "文件号",IDC_RadioSortByFileNumber,"Button",
+                    BS_AUTORADIOBUTTON,181,28,40,10
+    CONTROL         "到参考炮距离",IDC_RadioSortByDistance,"Button",
+                    BS_AUTORADIOBUTTON,181,43,64,10
+    CONTROL         "所有数据系列使用普内容通和当前内容颜色",
+                    IDC_RadioSeriesSameColor,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,18,95,227,10
+    CONTROL         "指定各数据系列颜色",IDC_RadioSeriesDifferentColor,
+                    "Button",BS_AUTORADIOBUTTON,18,111,88,10
+    COMBOBOX        IDC_comboSeriesNames,112,109,62,53,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_editCurrentColorBrighter,112,126,61,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_buttonSeriesColor,213,108,32,14,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "显示数值",IDC_RadioShowData,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,18,177,48,10
+    CONTROL         "显示比值",IDC_RadioShowRatio,"Button",
+                    BS_AUTORADIOBUTTON,18,192,48,10
+    CONTROL         "柱状图",IDC_RadioDrawRect,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,99,176,40,10
+    CONTROL         "曲线图",IDC_RadioDrawCurve,"Button",BS_AUTORADIOBUTTON,
+                    99,192,40,10
+    EDITTEXT        IDC_editSNHighDoor,212,173,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editSNLowDoor,212,189,32,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_staticSeriesColor,"Static",SS_BLACKFRAME,176,109,
+                    33,12
+    RTEXT           "当前颜色亮度提高:",IDC_STATIC,30,128,76,11
+    RTEXT           "(0~100)%",IDC_STATIC,174,128,38,11
+    RTEXT           "高门槛值:",IDC_STATIC,174,176,36,8
+    RTEXT           "低门槛值:",IDC_STATIC,174,192,36,8
+    GROUPBOX        "参考炮的显示方式",IDC_staticRefPointType,7,6,101,65
+    GROUPBOX        "显示内容",IDC_staticDataShowType,7,160,69,54
+    GROUPBOX        "显示方式",IDC_STATIC,86,160,70,54
+    GROUPBOX        "比值超限",IDC_STATIC,165,160,89,54
+    GROUPBOX        "数据系列的颜色",IDC_STATIC,7,78,248,74
+    GROUPBOX        "炮点排序方式",IDC_STATIC,118,6,137,65
+END
+
+IDD_dlgLoadBackGroundPic DIALOGEX 0, 0, 206, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "背景图片"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "图片文件名:",IDC_STATIC,34,36,53,8
+    EDITTEXT        IDC_editFileName,93,34,62,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_buttonFileName,157,33,23,13,0,WS_EX_CLIENTEDGE
+    RTEXT           "西坐标:",IDC_STATIC,34,50,53,8
+    EDITTEXT        IDC_editWestCoor,93,49,62,12,ES_AUTOHSCROLL
+    RTEXT           "东坐标:",IDC_STATIC,34,65,53,8
+    EDITTEXT        IDC_editEastCoor,93,63,62,12,ES_AUTOHSCROLL
+    RTEXT           "南坐标:",IDC_STATIC,34,79,53,8
+    EDITTEXT        IDC_editSouthCoor,93,78,62,12,ES_AUTOHSCROLL
+    RTEXT           "北坐标:",IDC_STATIC,34,94,53,8
+    EDITTEXT        IDC_editNorthCoor,93,92,62,12,ES_AUTOHSCROLL
+    CONTROL         "保持图片纵横比例:",IDC_checkKeepRatio,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,61,109,94,12,
+                    WS_EX_RIGHT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_FHEditViewPopUp MENU 
+BEGIN
+    POPUP "FHEditViewPopUp"
+    BEGIN
+        MENUITEM "&S设置",                      ID_FHSettings
+        MENUITEM "&A在当前行前插入行",          ID_FHEditViewInsRow
+        MENUITEM "&B在当前列前插入列",          ID_FHEditViewInsCol
+        MENUITEM "&C在尾部增加行",              ID_FHEditViewAddRow
+        MENUITEM "&D在尾部增加列",              ID_FHEditViewAddCol
+        MENUITEM "&E删除当前行",                ID_FHEditViewDelRow
+        MENUITEM "&F删除当前列",                ID_FHEditView_DelCol
+        MENUITEM "&G删除所有选定行",            ID_FHEditView_DelAllSelRow
+        MENUITEM "&H标注所有与选定内容相同的行", 
+                                                ID_FHEditView_MarlAllSameRowWithCols
+
+        MENUITEM "&I标出选定参数数值相同的行",  ID_FHEditView_MarlAllSameRowsOnCol
+
+        MENUITEM "&J消除SAME标志",              ID_EditView_RemoveSameMark
+        MENUITEM "&K删除所有与选定行相同的行",  ID_FHEditView_DelAllSameRow
+        MENUITEM "&L删除所有选定列",            ID_FHEditView_DelAllSelCol
+        MENUITEM "&N从文档还原数据",            ID_FHEditViewUpdateGrid
+        MENUITEM "&O重写行序号",                ID_FHEditViewReWriteOrder
+        MENUITEM "&P删除选定内容\tCtrl+X",      ID_FHEDITVIEWPOPUP_CUT
+        MENUITEM "&Q拷贝选定内容\tCtrl+C",      ID_FHEDITVIEWPOPUP_Copy
+        MENUITEM "&R批量修改选中网格内容",      ID_FHEDITVIEWPOPUP_BatchEdit
+        MENUITEM "&V粘贴\tCtrl+V",              ID_FHEDITVIEWPOPUP_Paste
+    END
+END
+
+IDR_HTML MENU 
+BEGIN
+    POPUP "&F文件"
+    BEGIN
+        MENUITEM "&N新文件\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&O打开文件...\tCtrl+O",       ID_FILE_OPEN
+        MENUITEM "&C关闭文件",                  ID_FILE_CLOSE
+        MENUITEM "&S保存\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为&A...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&P打印...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "&V打印预显",                  ID_FILE_PRINT_PREVIEW
+        MENUITEM "&R打印设置...",               ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&X退出",                      ID_APP_EXIT
+    END
+    POPUP "&E编辑"
+    BEGIN
+        MENUITEM "&U取消\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&T剪切\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "&C拷贝\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "&P粘贴\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&V视图"
+    BEGIN
+        MENUITEM "&T工具条",                    ID_VIEW_TOOLBAR
+        MENUITEM "&S状态条",                    ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        POPUP "&n字体"
+        BEGIN
+            MENUITEM "最大",                        ID_VIEW_FONTS_LARGEST
+            MENUITEM "大",                          ID_VIEW_FONTS_LARGE
+            MENUITEM "中",                          ID_VIEW_FONTS_MEDIUM
+            MENUITEM "小",                          ID_VIEW_FONTS_SMALL
+            MENUITEM "最小",                        ID_VIEW_FONTS_SMALLEST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&p停止\tEsc",                 ID_VIEW_STOP
+        MENUITEM "&R刷新\tF5",                  ID_VIEW_REFRESH
+    END
+    POPUP "&浏览"
+    BEGIN
+        MENUITEM "&B回退\tAlt+Left Arrow",      ID_GO_BACK
+        MENUITEM "&F向前\tAlt+Right Arrow",     ID_GO_FORWARD
+        MENUITEM SEPARATOR
+        MENUITEM "&S起始页",                    ID_GO_START_PAGE
+        MENUITEM "&S查找帮助",                  ID_GO_SEARCH
+    END
+    POPUP "&W窗口"
+    BEGIN
+        MENUITEM "&N新窗口",                    ID_WINDOW_NEW
+        MENUITEM "&C层叠",                      ID_WINDOW_CASCADE
+        MENUITEM "&T平铺",                      ID_WINDOW_TILE_HORZ
+        MENUITEM "&A安置图标",                  ID_WINDOW_ARRANGE
+    END
+    POPUP "&H帮助"
+    BEGIN
+        MENUITEM "&关于本软件...",              ID_APP_ABOUT
+    END
+END
+
+IDR_IDCreator MENU 
+BEGIN
+    POPUP "ID_Creator"
+    BEGIN
+        MENUITEM "设置图表属性",                ID_ChartProperty
+        MENUITEM "设置",                        ID_FHSettings
+        MENUITEM "ID_FHEnableInfoWnd",          ID_FHEnableInfoWnd
+        MENUITEM "ID_FHEnableCor",              39203
+        MENUITEM "ID_FHAddCurrItemToBaseMap",   35068
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_FHZoomViewToolBar   BITMAP                  ".\\res\\toolbar1.bmp"
+IDB_Number_0            BITMAP                  ".\\res\\number_0.bmp"
+IDB_Number_1            BITMAP                  ".\\res\\number_1.bmp"
+IDB_Number_2            BITMAP                  ".\\res\\number_2.bmp"
+IDB_Number_3            BITMAP                  ".\\res\\number_3.bmp"
+IDB_Number_4            BITMAP                  ".\\res\\number_4.bmp"
+IDB_Number_5            BITMAP                  ".\\res\\number_5.bmp"
+IDB_Number_6            BITMAP                  ".\\res\\number_6.bmp"
+IDB_Number_7            BITMAP                  ".\\res\\number_7.bmp"
+IDB_Number_8            BITMAP                  ".\\res\\number_8.bmp"
+IDB_Number_9            BITMAP                  ".\\res\\number_9.bmp"
+IDB_Number_Point        BITMAP                  ".\\res\\number_point.bmp"
+IDB_Number_Minus        BITMAP                  ".\\res\\number_minus.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FHEditViewSetSize, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_FHZoomAppearance, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_DlgColorModal, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_AskOneValue, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_DlgTreeProperty, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_DlgPassword, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_ProgressMonitor, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_DlgXYZInfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_DlgSprTextImporter, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_DlgSeisWorkProperty, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DlgNewDataBase, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_ChartProperty, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_DlgPasswordAdder, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_DlgMultiRgnViewProperty, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_dlgLoadBackGroundPic, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_FHZoomViewToolBar TOOLBAR  20, 20
+BEGIN
+    BUTTON      ID_FHZoomIn
+    BUTTON      ID_FHZoomOut
+    BUTTON      ID_FHZoomInArea
+    BUTTON      ID_FHZoomInHor
+    BUTTON      ID_FHZoomOutHor
+    BUTTON      ID_FHZoomInVer
+    BUTTON      ID_FHZoomOutVer
+    BUTTON      ID_FHZoomFull
+    BUTTON      ID_FHEnableInfoWnd
+    BUTTON      ID_FHEnableCor
+    BUTTON      ID_FHSetFont
+    BUTTON      ID_FHZoomErrorMsg
+    BUTTON      ID_FHZoomViewLast
+    BUTTON      ID_FHZoomViewNext
+    BUTTON      ID_FHZoomViewSearch
+    BUTTON      ID_FHZoomViewExportBitmap
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+ID_ZOOMVIEWACCE ACCELERATORS 
+BEGIN
+    "C",            ID_FHEDITVIEWPOPUP_Copy, VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_FHEDITVIEWPOPUP_CUT, VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_FHEDITVIEWPOPUP_Paste, VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_FHEDITVIEWPOPUP_BatchEdit, VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_FHZoomIn             "放大图形\n放大图形"
+    ID_FHZoomOut            "图形缩小\n图形缩小"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NoLineInArea        "本工区无测线"
+    IDS_AreaMustSelected    "必须首先选定一个工区"
+    IDS_TopoNetPointQtyError "三角网顶点数目错误"
+    IDS_LineMustBeSelected  "必须首先选定测线"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AreaMustBeSelected  "必须首先选定工区"
+    IDS_RecordQtyError      "记录数目出错"
+    IDS_ErrorWhenWriteInFile " 写入文件时出现错误"
+    IDS_TreeViewNotFound    "数据库树没有发现"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UnableOpenFile      "无法打开文件"
+    IDS_UnableCreateFile    "无法建立文件"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOPONET_FileError   "拓补文件错误"
+    IDS_TOPONET_NotTopoFile "不是正确的三角拓补点文件"
+    IDS_TOPONET_No2LinkVertexOnLine "本线段上没有相连顶点"
+    IDS_TOPONET_No2LineOnTheVertex "所给顶点只有一条线段相连"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FHEnableCor          "显示/隐藏坐标\n显示/隐藏坐标"
+    ID_FHZoomOutVer         "垂直放大\n垂直放大"
+    ID_FHZoomErrorMsg       "显示错误信息\n显示错误信息"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FHZoomViewNext       "显示下一项\n显示下一项"
+    ID_FHZoomViewLast       "显示上一项\n显示上一项"
+    ID_FHZoomViewSearch     "搜索\n搜索"
+    ID_FHZoomViewExportBitmap "输出图件到位图\n输出图件到位图"
+    ID_FHEditViewAddRow     "增加一行\n增加一行"
+    ID_FHEditViewAddCol     "增加一列\n增加一列"
+    ID_FHEditViewSetSize    "设置行列数目\n设置行列数目"
+    ID_FHEditViewDelRow     "删除选定行"
+    ID_FHEditView_DelCol    "删除列\n删除列"
+    ID_FHEditViewInsRow     "插入行\n插入行"
+    ID_FHEditViewInsCol     "插入列\n插入列"
+    ID_FHEditViewUpdateGrid "从磁盘文件恢复数据\n从磁盘文件恢复数据"
+    ID_FHTreeOpenDataBase   "打开已有数据库\n打开已有数据库"
+    ID_FHTreeNewDataBase    "建立新数据库\n建立新数据库"
+    ID_FHTreeInsertLine     "在当前工区中插入测线\n在当前工区中插入测线"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FHTreeRemoveLine     "从工区中删除测线名称，并不实际删除磁盘数据\n从工区中删除测线名称，并不实际删除磁盘数据"
+    ID_FHTreeDrawLineData   "显示所选定的测线数据\n显示所选定的测线数据"
+    ID_FHTreeDrawLineMap    "绘制测线的图形\n绘制测线的图形"
+    ID_FHTreeInsertArea     "在当前数据库中插入工区名\n在当前数据库中插入工区名"
+    ID_FHTreeRemoveArea     "从数据库中山区工区名称，并不是集删除磁盘上的数据\n从数据库中山区工区名称，并不是集删除磁盘上的数据"
+    ID_FHTreeDrawAreaMap    "绘制工区内所有测线的位置图\n绘制工区内所有测线的位置图"
+    ID_FHTreeNewLineData    "创建一条新测线的数据\n创建一条新测线的数据"
+    ID_FHTreeShowFullName   "显示(不显示)测线的路径\n显示(不现实)测线的路径"
+    ID_FHTreeShowSortedName "按字母顺序(或者按加入的顺序)显示测线名称\n按字母顺序(或者按加入的顺序)显示测线名称"
+    ID_FHTreeProperty       "显示数据库的属性\n显示数据库的属性"
+    ID_FHZoomInArea         "放大所选择的矩形区域\n放大所选择的矩形区域"
+    ID_FHZoomSearch         "查找某一页"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_TEXT_VIEW           "\n\n文本文件(*.txt)\n文本文件(*.txt)\n.txt\nTextEdit\n文本文件"
+    IDR_MULTIDOC_VIEW       "\n\n\n\n.mdv\nMultiDocView\n"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FHEditView_MarlAllSameRowWithCols "&H标注所有与选定行列内容相同的行"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FHTREE              BITMAP                  ".\\res\\tree_sur.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "..\res\zoomview.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

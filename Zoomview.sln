@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zoomview", "zoomview.vcproj", "{CAFF9418-63EB-4438-8DD9-F97238560D9B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CAFF9418-63EB-4438-8DD9-F97238560D9B}.Debug.ActiveCfg = Debug|Win32
+		{CAFF9418-63EB-4438-8DD9-F97238560D9B}.Debug.Build.0 = Debug|Win32
+		{CAFF9418-63EB-4438-8DD9-F97238560D9B}.Release.ActiveCfg = Release|Win32
+		{CAFF9418-63EB-4438-8DD9-F97238560D9B}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
